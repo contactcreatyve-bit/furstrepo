@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14081a">
+<title>छठ पूजा की हार्दिक शुभकामनाएँ — विराट कुमार</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14081a;--gold:#f7c85a;--cream:#fff1d6;--mute:#e3c79a;--deva:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif;--lat:'Cormorant Garamond',Georgia,serif;color-scheme:dark;box-sizing:border-box;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--cream);font:400 1.08rem/1.85 var(--deva);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.bar{position:fixed;top:0;left:0;right:0;height:2px;z-index:20;transform-origin:0 50%;transform:scaleX(var(--p,0));background:linear-gradient(90deg,#c2410c,var(--gold))}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:4}
+
+/* HERO */
+.hero{--s:min(64vw,400px);position:relative;height:100svh;min-height:620px;overflow:hidden;background:linear-gradient(180deg,#14081a 0%,#3a1233 30%,#8a2a2e 56%,#e0661a 72%,#f7b53b 74%)}
+.halo{position:absolute;left:50%;bottom:26%;width:150vmax;height:150vmax;margin:0 0 -75vmax -75vmax;background:radial-gradient(closest-side,rgba(255,180,70,.5),rgba(255,120,40,.12) 55%,transparent 75%);opacity:calc(1 - var(--k,0)*.75)}
+.sun{position:absolute;left:50%;bottom:26%;width:var(--s);height:var(--s);margin:0 0 calc(var(--s)/-2) calc(var(--s)/-2);animation:rise 4s cubic-bezier(.16,.8,.2,1) both}
+@keyframes rise{from{transform:translateY(62%);opacity:.2}to{transform:none;opacity:1}}
+.sunin{position:absolute;inset:0;transform:translateY(calc(var(--k,0)*58%))}
+.disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,#fffbe6 0,#ffe08a 30%,#ffb23e 58%,#f26b1d 100%);box-shadow:0 0 70px 24px rgba(255,170,60,.55),0 0 200px 80px rgba(255,120,40,.3)}
+.rays{position:absolute;inset:-75%;border-radius:50%;background:repeating-conic-gradient(rgba(255,214,120,.2) 0 3deg,transparent 3deg 12deg);-webkit-mask:radial-gradient(circle,#000 17%,transparent 60%);mask:radial-gradient(circle,#000 17%,transparent 60%);animation:spin 100s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.dusk{position:absolute;inset:0;z-index:1;background:linear-gradient(#14081a,#2b0f2d 70%,#4a1a2a);opacity:calc(var(--k,0)*.8)}
+.fig{--w:clamp(78px,11vw,116px);position:absolute;z-index:2;bottom:calc(26% - var(--w)*1.15);left:11%;width:var(--w);height:auto;aspect-ratio:120/230;animation:fade 2s ease 2s both}
+.fig.s{--w:clamp(56px,8.5vw,90px);left:auto;right:13%;width:var(--w);bottom:calc(26% - var(--w)*1.093);opacity:.85}
+@media(max-width:640px){.fig{left:5%}.fig.s{right:7%}}
+.water{position:absolute;z-index:3;left:0;right:0;bottom:0;height:26%;background:linear-gradient(#c4561a 0,#6b1f2c 38%,#2a0f2e 75%,#14081a 100%)}
+.wave{position:absolute;left:0;bottom:calc(100% - 1px);width:200%;height:20px;animation:drift 16s linear infinite}
+.wave.b{bottom:calc(100% + 3px);height:15px;opacity:.5;animation-duration:24s;animation-direction:reverse}
+@keyframes drift{to{transform:translateX(-50%)}}
+.glint{position:absolute;left:50%;top:5px;width:var(--s);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:calc(1 - var(--k,0)*.9)}
+.glint i{display:block;height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,#ffe9a8,transparent);animation:shim 3.4s ease-in-out infinite}
+@keyframes shim{0%,100%{transform:scaleX(.55);opacity:.35}50%{transform:scaleX(1);opacity:.95}}
+.fd{position:absolute;animation:bob 6s ease-in-out infinite alternate;animation-delay:var(--d);scale:var(--z,1)}
+@keyframes bob{from{transform:translate(-7px,0) rotate(-3deg)}to{transform:translate(9px,5px) rotate(3deg)}}
+.top{position:absolute;z-index:5;top:22px;left:clamp(20px,4vw,48px);right:clamp(20px,4vw,48px);display:flex;justify-content:space-between;font:500 .95rem/1 var(--lat);letter-spacing:.3em;color:var(--mute);animation:fade 1.6s ease 1.6s both}
+.top span:last-child{font-family:var(--deva);letter-spacing:.04em;font-size:.9rem}
+.hero-text{position:absolute;z-index:5;left:0;right:0;top:14%;padding:0 20px;text-align:center;transform:translateY(calc(var(--k,0)*50px));opacity:calc(1 - var(--k,0)*1.3)}
+h1{margin:0;font:400 clamp(4rem,12vw,9.5rem)/1.2 var(--deva)}
+.w{display:inline-block;overflow:hidden;padding:.14em .08em .04em;vertical-align:top}
+.w>span{display:inline-block;transform:translateY(118%);background:linear-gradient(180deg,#fff6d6,var(--gold) 55%,#e2872a);-webkit-background-clip:text;background-clip:text;color:transparent;animation:up 1.5s cubic-bezier(.16,.9,.2,1) calc(1s + var(--d,0s)) forwards}
+@keyframes up{to{transform:none}}
+.sub{margin:4px 0 0;font-size:clamp(1.25rem,3.4vw,2rem);animation:fade 1.6s ease 2s both}
+.en{margin:6px 0 0;font:italic 400 clamp(1.05rem,2.4vw,1.4rem)/1.5 var(--lat);color:var(--mute);animation:fade 1.6s ease 2.3s both}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.curtain{position:absolute;inset:0;z-index:6;background:#0b0412;pointer-events:none;animation:dawn 2.4s ease .1s forwards}
+@keyframes dawn{to{opacity:0}}
+.cue{position:absolute;z-index:5;bottom:14px;left:50%;width:1px;height:34px;background:linear-gradient(var(--gold),transparent);transform-origin:50% 0;animation:cue 2.4s ease-in-out 3s infinite;opacity:0}
+@keyframes cue{0%{transform:scaleY(0);opacity:0}30%{opacity:.9}100%{transform:scaleY(1);opacity:0}}
+
+/* DIYA */
+.diya{position:relative;display:inline-block;width:26px;height:17px}
+.diya::after{content:"";position:absolute;left:50%;top:-24px;width:84px;height:84px;margin-left:-42px;border-radius:50%;background:radial-gradient(circle,rgba(255,170,60,.38),transparent 65%);pointer-events:none;opacity:0;transition:opacity 1.2s ease}
+.bowl{position:absolute;left:0;right:0;bottom:0;height:11px;border-radius:2px 2px 14px 14px/2px 2px 11px 11px;background:linear-gradient(#e08a2b,#8c3a12);box-shadow:inset 0 2px 0 rgba(255,210,122,.4)}
+.fl{position:absolute;left:50%;bottom:9px;width:8px;height:16px;margin-left:-4px;border-radius:50%/65% 65% 35% 35%;background:radial-gradient(ellipse at 50% 80%,#fff 0,#ffe27a 35%,#ff9a1f 70%,transparent 100%);filter:drop-shadow(0 0 5px #ffb347);transform-origin:50% 100%;opacity:0;transform:scale(0)}
+.diya.lit .fl,.day.in .fl{animation:ign .9s cubic-bezier(.2,1.4,.4,1) var(--w,0s) both,flick 1.7s ease-in-out calc(var(--w,0s) + .9s) infinite alternate}
+.diya.lit::after,.day.in .diya::after{opacity:1;transition-delay:var(--w,0s)}
+@keyframes ign{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
+@keyframes flick{from{transform:scale(1,1) rotate(-2deg)}to{transform:scale(.86,1.14) rotate(2deg)}}
+
+/* SECTIONS */
+.sec{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:clamp(72px,12vw,140px) 24px 0;text-align:center}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:30px}
+.orn i{height:1px;width:72px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn i:last-child{transform:scaleX(-1)}
+.orn b{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+h2{margin:0 0 18px;font:400 clamp(1.9rem,5vw,3.1rem)/1.3 var(--deva);color:var(--gold)}
+.lead{max-width:34em;margin:0 auto;color:var(--mute)}
+.days{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:68px;text-align:left}
+.days::before{content:"";position:absolute;left:0;right:0;top:24px;height:1px;background:linear-gradient(90deg,transparent,rgba(247,200,90,.5) 10%,rgba(247,200,90,.5) 90%,transparent)}
+.day{position:relative;padding-top:64px}
+.day .diya{position:absolute;top:0;left:0;scale:1.5;transform-origin:0 0}
+.day small{display:block;color:var(--mute);font-size:.85rem;opacity:.8}
+.day h3{margin:0 0 8px;font:400 1.55rem/1.3 var(--deva);color:var(--gold)}
+.day p{margin:0;color:var(--mute);font-size:1rem;line-height:1.75}
+@media(max-width:760px){.days{grid-template-columns:1fr;gap:44px;padding-left:60px}.days::before{left:19px;right:auto;top:0;bottom:0;width:1px;height:auto;background:linear-gradient(transparent,rgba(247,200,90,.5) 8%,rgba(247,200,90,.5) 92%,transparent)}.day{padding-top:0}.day .diya{left:-60px;top:6px}}
+.rv{opacity:0;transition:opacity 1.6s ease}
+.rv.in{opacity:1}
+.panel{position:relative;padding:clamp(40px,6vw,84px) clamp(26px,5vw,76px);border-radius:3px;background:linear-gradient(180deg,rgba(255,226,170,.07),rgba(255,226,170,.015));border:1px solid rgba(247,200,90,.4);outline:1px solid rgba(247,200,90,.16);outline-offset:-12px;box-shadow:0 50px 120px -50px rgba(242,107,29,.45)}
+.q{display:block;height:3.2rem;font:italic 500 7rem/.9 var(--lat);color:rgba(247,200,90,.35)}
+.msg{max-width:30em;margin:0 auto;font-size:clamp(1.3rem,3.2vw,2rem);line-height:1.75}
+.msg-en{margin:18px auto 0;max-width:30em;font:italic 400 clamp(1.05rem,2.4vw,1.3rem)/1.6 var(--lat);color:var(--mute)}
+.sign{position:relative;margin-top:44px;padding-top:36px}
+.sign::before{content:"";position:absolute;top:0;left:50%;width:90px;height:1px;margin-left:-45px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.regards{font:italic 500 1.2rem/1.4 var(--lat);color:var(--mute)}
+.name{margin:6px 0 0;padding-left:.28em;font:500 clamp(2rem,7.5vw,3.8rem)/1.2 var(--lat);letter-spacing:.28em;color:var(--gold);text-shadow:0 0 30px rgba(247,200,90,.35)}
+.name span{display:inline-block;opacity:0;transform:translateY(40%);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i)*90ms)}
+.name.in span{opacity:1;transform:none}
+.sp{display:inline-block;width:.5em}
+.hn{display:block;margin-top:2px;font-size:1.1rem;letter-spacing:.2em;color:var(--mute)}
+.stage{position:relative;margin:42px auto 0;max-width:480px;aspect-ratio:1;-webkit-tap-highlight-color:transparent}
+.stage svg{display:block;width:100%;height:100%;overflow:visible;--g:0}
+.dy{cursor:pointer;outline:none}
+.hz{fill:transparent;stroke:rgba(247,200,90,.55);stroke-width:1;stroke-dasharray:2 5;transform-box:fill-box;transform-origin:center;animation:inv 2.6s ease-in-out infinite}
+.dy:focus-visible .hz{stroke:#fff}
+.lit .hz{animation:none;stroke:none}
+@keyframes inv{50%{stroke-opacity:.15;transform:scale(1.07)}}
+.fm{transform-box:fill-box;transform-origin:50% 100%;transform:scale(0);opacity:0}
+.lit .fm{animation:ig2 .9s cubic-bezier(.2,1.4,.4,1) both,fk2 calc(1.5s + var(--p,0)*.35s) ease-in-out .9s infinite alternate}
+@keyframes ig2{to{opacity:1;transform:scale(1)}}
+@keyframes fk2{from{transform:scale(1,1) rotate(-1.5deg)}to{transform:scale(.9,1.1) rotate(1.5deg)}}
+.gw{opacity:0;transition:opacity 1.4s ease;transform-box:fill-box;transform-origin:center}
+.lit .gw{opacity:1;animation:gp 3.4s ease-in-out infinite alternate}
+@keyframes gp{to{transform:scale(1.12);opacity:.78}}
+.warm{opacity:var(--g,0);transition:opacity 1.4s ease}
+.rg{fill:none;stroke:#f7c85a;stroke-width:1;stroke-opacity:calc(.2 + var(--g,0)*.7);transition:stroke-opacity 1.4s ease}
+.rg ellipse{fill:rgba(247,200,90,.05)}
+.all .spin{animation:spin 90s linear infinite}
+.tip{display:flex;align-items:center;gap:12px;width:max-content;max-width:100%;margin:28px auto 0;padding:11px 22px;border:1px solid rgba(247,200,90,.45);border-radius:999px;background:rgba(247,200,90,.08);color:var(--gold);font-size:1rem;line-height:1.4}
+.tip i{flex:none;width:9px;height:9px;border-radius:50%;background:var(--gold);animation:tp 1.8s ease-out infinite}
+@keyframes tp{0%{box-shadow:0 0 0 0 rgba(247,200,90,.6)}100%{box-shadow:0 0 0 12px rgba(247,200,90,0)}}
+.tapc{pointer-events:none}
+.tapc circle{fill:none;stroke:#fff1d6;stroke-width:2;transform-box:fill-box;transform-origin:center;opacity:0;animation:tc 2s ease-out infinite}
+@keyframes tc{0%{opacity:.9;transform:scale(.6)}100%{opacity:0;transform:scale(4.5)}}
+.go .tapc{display:none}
+#count{margin:18px 0 0;color:var(--mute);font-size:.95rem}
+.fin{margin:22px auto 0;max-width:22em;min-height:6.4em;font-size:1.25rem;line-height:1.7;opacity:0;transform:translateY(10px);transition:opacity 1.4s ease,transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.fin.on{opacity:1;transform:none}
+.fin b{display:block;margin-top:8px;padding-left:.28em;font:500 1.3rem var(--lat);letter-spacing:.28em;color:var(--gold)}
+.dpbar{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center;justify-content:center;margin-top:30px}
+.dbtn{position:relative;isolation:isolate;overflow:hidden;font:400 1.05rem/1 var(--deva);padding:15px 32px;color:var(--gold);background:transparent;border:1px solid rgba(247,200,90,.65);border-radius:2px;cursor:pointer;transition:color .5s cubic-bezier(.2,.8,.2,1),transform .3s}
+.dbtn::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--gold);transform:translateY(101%);transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+.dbtn:hover{color:var(--ink)}
+.dbtn:hover::before{transform:none}
+.dbtn:active{transform:scale(.98)}
+.dbtn.alt{border-color:rgba(247,200,90,.3);color:var(--mute)}
+.dbtn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.dbtn:not(.alt){background:var(--gold);color:var(--ink)}
+.dbtn:not(.alt)::before{background:#fff1d6}
+.by{margin:22px 0 0;padding-left:.32em;display:flex;flex-direction:column;align-items:center;gap:8px;font:500 1.05rem/1 var(--lat);letter-spacing:.32em;color:var(--gold);animation:fade 1.6s ease 2.6s both}
+.by span{font:italic 400 1rem/1 var(--lat);letter-spacing:.04em;color:var(--mute)}
+footer b{display:block;margin-top:8px;padding-left:.3em;font:500 1.3rem var(--lat);letter-spacing:.3em;color:var(--gold)}
+@media(max-width:640px){
+.top{top:16px;font-size:.8rem}
+.hero-text{top:14%}
+.name{font-size:clamp(1.5rem,7.2vw,2.2rem);letter-spacing:.2em;padding-left:.2em;white-space:nowrap}
+.dpbar{flex-direction:column;gap:14px;margin-top:26px}
+.dbtn{width:100%;max-width:340px;min-height:54px;font-size:1.1rem}
+}
+footer{position:relative;z-index:1;margin-top:clamp(80px,12vw,140px);padding:48px 24px 56px;text-align:center;border-top:1px solid rgba(247,200,90,.15);color:var(--mute)}
+footer p{margin:0;font-size:1.2rem;color:var(--gold)}
+footer small{display:block;margin-top:8px;font:500 .95rem var(--lat);letter-spacing:.18em}
+.toast{position:fixed;z-index:30;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));padding:12px 22px;border-radius:999px;background:#2a0f2e;border:1px solid rgba(247,200,90,.4);color:var(--cream);font-size:.95rem;transform:translate(-50%,30px);opacity:0;pointer-events:none;transition:.5s cubic-bezier(.2,.8,.2,1)}
+.toast.on{transform:translate(-50%,0);opacity:1}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="dev" viewBox="0 0 120 230"><path d="M44 70 29 25M76 70 91 25" stroke="#12061a" stroke-width="7" stroke-linecap="round" fill="none"/><g fill="#12061a" stroke="#ffc864" stroke-opacity=".5"><path d="M21 24Q60-8 99 24Q60 14 21 24Z"/><circle cx="60" cy="42" r="12"/><path d="M42 68Q60 55 78 68L92 228H28Z"/></g><g fill="#ffd27a"><circle cx="48" cy="15" r="3"/><circle cx="60" cy="11" r="3.4"/><circle cx="72" cy="15" r="3"/></g></symbol></defs></svg>
+
+<header class="hero">
+  <div class="halo"></div>
+  <div class="sun"><div class="sunin"><i class="rays"></i><i class="disc"></i></div></div>
+  <div class="dusk"></div>
+  <svg class="fig" role="img" aria-label="सूर्य को अर्घ्य देते श्रद्धालु की छाया"><use href="#dev"/></svg>
+  <svg class="fig s" aria-hidden="true"><use href="#dev"/></svg>
+  <div class="water">
+    <svg class="wave b" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22Q37 4 75 22T150 22T225 22T300 22T375 22T450 22T525 22T600 22V40H0Z" fill="#c4561a"/></svg>
+    <svg class="wave" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22Q37 4 75 22T150 22T225 22T300 22T375 22T450 22T525 22T600 22V40H0Z" fill="#c4561a"/></svg>
+    <div class="glint" aria-hidden="true"></div>
+  </div>
+  <div class="top"><span>VIRAT KUMAR</span><span>छठ पूजा 2026</span></div>
+  <div class="hero-text">
+    <h1><span class="w"><span>छठ</span></span> <span class="w"><span style="--d:.18s">पूजा</span></span></h1>
+    <p class="sub">की हार्दिक शुभकामनाएँ</p>
+    <p class="en">Wishing you light, good health and abundance</p>
+    <p class="by"><span>With warm wishes from</span>VIRAT KUMAR</p>
+  </div>
+  <i class="cue"></i>
+  <div class="curtain"></div>
+</header>
+
+<main>
+  <section class="sec">
+    <div class="orn"><i></i><b></b><i></i></div>
+    <h2>आस्था, तपस्या और प्रकृति का संगम</h2>
+    <p class="lead">छठ वह पर्व है जहाँ डूबते और उगते, दोनों सूर्य को नमन किया जाता है। चार दिन का संयम, घाट पर गूँजते लोकगीत और साथ खड़ा पूरा परिवार, यही इस महापर्व की असली पूँजी है।</p>
+  </section>
+
+  <section class="sec">
+    <h2>चार दिन, चार दीप</h2>
+    <div class="days">
+      <article class="day" style="--w:0s"><span class="diya"><i class="bowl"></i><b class="fl"></b></span><small>पहला दिन</small><h3>नहाय-खाय</h3><p>पवित्र स्नान और सात्विक भोजन से व्रत का शुभारंभ।</p></article>
+      <article class="day" style="--w:.5s"><span class="diya"><i class="bowl"></i><b class="fl"></b></span><small>दूसरा दिन</small><h3>खरना</h3><p>दिन भर उपवास, संध्या को गुड़ की खीर और रोटी का प्रसाद।</p></article>
+      <article class="day" style="--w:1s"><span class="diya"><i class="bowl"></i><b class="fl"></b></span><small>तीसरा दिन</small><h3>संध्या अर्घ्य</h3><p>डूबते सूर्य को अर्घ्य और घाट पर दीपों की जगमगाहट।</p></article>
+      <article class="day" style="--w:1.5s"><span class="diya"><i class="bowl"></i><b class="fl"></b></span><small>चौथा दिन</small><h3>उषा अर्घ्य</h3><p>उगते सूर्य को अर्घ्य देकर व्रत का पारण।</p></article>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="panel rv">
+      <span class="q" aria-hidden="true">“</span>
+      <p class="msg">छठी मइया आपके जीवन में सुख, समृद्धि और आरोग्य का उजाला भरें। सूर्य देव की कृपा से हर घर में शांति और हर मन में विश्वास बना रहे।</p>
+      <p class="msg-en">May Chhathi Maiya and Surya Dev fill your home with light, good health and harmony.</p>
+      <div class="sign">
+        <div class="regards">With heartfelt wishes,</div>
+        <div class="name" id="nm" role="img" aria-label="VIRAT KUMAR">VIRAT KUMAR</div>
+        <span class="hn">विराट कुमार</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec rv">
+    <h2>श्रद्धा के सात दीप</h2>
+    <p class="lead">हर दीप को छुएँ और उसे प्रज्वलित करें। सातों दीप जलते ही रंगोली जगमगा उठेगी।</p>
+    <p class="tip"><i></i><span id="tipt">किसी भी दीप को छुएँ</span></p>
+    <div class="stage"><svg id="mn" viewBox="0 0 400 400" role="group" aria-label="रंगोली पर सात दीप"><defs>
+<radialGradient id="wg"><stop offset="0" stop-color="#ffc25a" stop-opacity=".6"/><stop offset=".5" stop-color="#ff8a2a" stop-opacity=".18"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></radialGradient>
+<radialGradient id="fl"><stop offset="0" stop-color="#2e1632"/><stop offset="1" stop-color="#170a1c"/></radialGradient>
+<linearGradient id="clay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e59a48"/><stop offset=".55" stop-color="#b35a1f"/><stop offset="1" stop-color="#4a1a0b"/></linearGradient>
+<linearGradient id="fo" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffb12e"/><stop offset="1" stop-color="#ff6a1a"/></linearGradient>
+<linearGradient id="fi" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff6c8"/><stop offset="1" stop-color="#ffd25a"/></linearGradient>
+</defs><g id="mg" transform="translate(200 200)"></g></svg></div>
+    <p id="count" aria-live="polite">0 / 7 दीप प्रज्वलित</p>
+    <p class="fin" id="fin">छठी मइया की कृपा आप और आपके परिवार पर बनी रहे।<b>VIRAT KUMAR</b></p>
+    <div class="dpbar">
+      <button class="dbtn" id="light" type="button">दीप जलाएँ</button>
+      <button class="dbtn alt" id="share" type="button">शुभकामना साझा करें</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>जय छठी मइया, जय सूर्य देव</p>
+  <small>Made with devotion by<b>VIRAT KUMAR</b></small>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),R=document.documentElement,RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const D=(l,a='')=>`<span class="diya${l?' lit':''}"${a}><i class="bowl"></i><b class="fl"></b></span>`;
+
+$('.water').insertAdjacentHTML('beforeend',[[8,38,.9],[22,64,1.2],[63,30,.8],[78,58,1.1],[91,38,.7],[47,74,1.3],[34,26,.7]].map((v,i)=>`<span class="fd" style="left:${v[0]}%;top:${v[1]}%;--z:${v[2]};--d:-${(i*1.3).toFixed(1)}s">${D(1)}</span>`).join(''));
+$('.glint').innerHTML=Array.from({length:9},(_,i)=>`<i style="width:${88-i*8}%;animation-delay:${(-i*.37).toFixed(2)}s"></i>`).join('');
+
+const nm=$('#nm');
+nm.innerHTML=[...'VIRAT KUMAR'].map((c,i)=>c===' '?'<span class="sp"></span>':`<span style="--i:${i}" aria-hidden="true">${c}</span>`).join('');
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.3});
+document.querySelectorAll('.rv,.day,#nm').forEach(n=>io.observe(n));
+
+/* embers */
+const cv=$('#fx'),cx=cv.getContext('2d');let W,H,k=1,P=[];
+const rn=(a,b)=>a+Math.random()*(b-a);
+const sz=()=>{k=Math.min(devicePixelRatio||1,2);W=cv.width=innerWidth*k;H=cv.height=innerHeight*k};
+sz();addEventListener('resize',sz);
+if(!RM)for(let i=0;i<Math.min(46,innerWidth/18|0);i++)P.push({x:rn(0,W),y:rn(0,H),r:rn(.6,1.9)*k,vy:-rn(.12,.5)*k,ph:rn(0,6.28),a:rn(.25,.7),L:0});
+function burst(x,y){if(RM)return;for(let i=0;i<28;i++){const t=rn(0,6.28),s=rn(.6,3)*k;P.push({x:x*k,y:y*k,r:rn(.8,2.2)*k,vx:Math.cos(t)*s,vy:Math.sin(t)*s-k,ph:0,a:1,L:1})}}
+(function f(){
+cx.clearRect(0,0,W,H);cx.globalCompositeOperation='lighter';
+P=P.filter(p=>{
+if(p.L){p.x+=p.vx;p.y+=p.vy;p.vx*=.97;p.vy=p.vy*.97+.012*k;p.L-=.016;if(p.L<=0)return false}
+else{p.ph+=.012;p.x+=Math.sin(p.ph)*.3*k;p.y+=p.vy;if(p.y<-10){p.y=H+10;p.x=rn(0,W)}}
+const al=p.L?p.a*p.L:p.a*(.55+.45*Math.sin(p.ph*3));
+cx.fillStyle=`rgba(255,190,90,${al*.16})`;cx.beginPath();cx.arc(p.x,p.y,p.r*4,0,6.283);cx.fill();
+cx.fillStyle=`rgba(255,232,170,${al})`;cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fill();
+return true});
+requestAnimationFrame(f)})();
+
+/* scroll: sun sinks, progress bar */
+const hero=$('.hero');
+const sc=()=>{const m=R.scrollHeight-innerHeight;R.style.setProperty('--p',m>0?scrollY/m:0);hero.style.setProperty('--k',Math.min(scrollY/(hero.offsetHeight*.85),1))};
+addEventListener('scroll',sc,{passive:true});sc();
+
+/* diya + share */
+const ct=$('#count'),ts=$('#toast');let tt;
+const toast=m=>{ts.textContent=m;ts.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>ts.classList.remove('on'),2600)};
+/* mandala of diyas */
+const mn=$('#mn'),mg=$('#mg'),fin=$('#fin'),btn=$('#light');let lit=0;
+const pos=[[0,0,1.2]].concat([0,1,2,3,4,5].map(k=>{const a=(k*60-90)*Math.PI/180;return[+(118*Math.cos(a)).toFixed(1),+(118*Math.sin(a)).toFixed(1),.92]}));
+const dy=(v,k)=>`<g class="dy" transform="translate(${v[0]} ${v[1]}) scale(${v[2]})" style="--p:${k%3}" tabindex="0" role="button" aria-label="दीप ${k+1} जलाएँ"><circle class="gw" r="95" cy="-26" fill="url(#wg)"/><ellipse cy="30" rx="42" ry="8" fill="#000" opacity=".4"/><path d="M-36 0C-36 22-18 32 0 32S36 22 36 0Z" fill="url(#clay)"/><path d="M-36 0C-36 22-18 32 0 32" fill="none" stroke="#f6c07a" stroke-opacity=".45" stroke-width="1.2"/><ellipse rx="36" ry="11" fill="#3a1608" stroke="#f0b46a" stroke-opacity=".7"/><ellipse cy="1" rx="27" ry="7" fill="#7a3510"/><ellipse cx="-8" cy="-.5" rx="9" ry="2" fill="#ffd9a0" opacity=".25"/><rect x="-1.5" y="-9" width="3" height="9" rx="1.5" fill="#2a0f08"/><g class="fm"><path d="M0-6C-12-18-9-38 0-58 9-38 12-18 0-6Z" fill="url(#fo)"/><path d="M0-8C-6-17-4-30 0-42 4-30 6-17 0-8Z" fill="url(#fi)"/><ellipse cy="-9" rx="3" ry="4" fill="#6f96ff" opacity=".7"/></g><circle class="hz" r="48" cy="-6"/></g>`;
+const pet=[...Array(12)].map((_,k)=>`<ellipse cy="-150" rx="13" ry="30" transform="rotate(${k*30})"/>`).join('');
+mg.innerHTML=`<circle r="198" fill="url(#fl)" stroke="#f7c85a" stroke-opacity=".3"/><circle class="warm" r="198" fill="url(#wg)"/><g class="rg"><g class="spin"><circle r="186"/><circle r="178" stroke-dasharray="1 7"/>${pet}</g><circle r="118"/><circle r="62"/><path d="M0-118 102 59-102 59ZM0 118 102-59-102-59Z"/></g>`+pos.map((v,k)=>[v,k]).sort((a,b)=>a[0][1]-b[0][1]).map(x=>dy(x[0],x[1])).join('')+'<g class="tapc"><circle r="9" cy="-14"/><circle r="9" cy="-14" style="animation-delay:1s"/></g>';
+const ds=()=>[...mn.querySelectorAll('.dy')];
+function upd(){mn.style.setProperty('--g',lit/7);$('#tipt').textContent=lit===0?'किसी भी दीप को छुएँ':lit<7?'अगला दीप छुएँ':'सातों दीप प्रज्वलित';mn.classList.toggle('go',lit>0);ct.textContent=lit+' / 7 दीप प्रज्वलित';fin.classList.toggle('on',lit===7);mn.classList.toggle('all',lit===7);btn.textContent=lit===7?'दोबारा शुरू करें':'सभी दीप जलाएँ';
+if(lit===7){const r=mn.getBoundingClientRect();[0,1,2].forEach(k=>setTimeout(()=>burst(r.left+r.width/2,r.top+r.height/2),k*300))}}
+function on(d){if(d.classList.contains('lit'))return;d.classList.add('lit');lit++;const r=d.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height*.3);try{navigator.vibrate&&navigator.vibrate(12)}catch(e){}upd()}
+mn.addEventListener('click',e=>{const d=e.target.closest('.dy');if(d)on(d)});
+mn.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const d=e.target.closest('.dy');if(d){e.preventDefault();on(d)}}});
+btn.onclick=()=>{if(lit===7){ds().forEach(d=>d.classList.remove('lit'));lit=0;upd();return}ds().filter(d=>!d.classList.contains('lit')).forEach((d,k)=>setTimeout(()=>on(d),k*420))};
+upd();
+$('#share').onclick=async()=>{
+const d={title:document.title,text:'छठ पूजा की हार्दिक शुभकामनाएँ! छठी मइया की कृपा आप पर बनी रहे। — VIRAT KUMAR',url:location.href};
+try{if(navigator.share){await navigator.share(d);return}await navigator.clipboard.writeText(d.text+' '+d.url);toast('शुभकामना संदेश कॉपी हो गया')}
+catch(e){if(e&&e.name!=='AbortError')toast('लिंक कॉपी करके साझा करें')}};
+})();
+</script>
+</body>
+</html>
